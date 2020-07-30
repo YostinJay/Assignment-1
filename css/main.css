@@ -1,73 +1,103 @@
 @charset "UTF-8";
 
-html, body {
-	margin: 0;
-	padding: 0;
-}
-div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd, address, blockquote {
-	margin: 0;
-	padding: 0;
-}
+html,
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+address,
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Noto Sans;
 	font-size: 90%;
 }
+
 #header {
 	margin-bottom: 1em;
 	border-bottom: 2px solid #630;
 	margin-top: 1em;
-	position:  relative;
+	position: relative;
 }
+
 #header .anniversary {
-	background:  url(../images/50_anniv.png) no-repeat center center;
+	background: url(../images/50_anniv.png) no-repeat center center;
 	width: 177px;
 	height: 113px;
 	position: absolute;
 	left: 170px;
 	top: 10px;
 }
+
 #header h1 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 3em;
 	color: #630;
 	font-weight: normal;
 }
+
 #header h2 {
 	font-size: 1.4em;
 	margin-bottom: .5em;
 }
+
 img.floatIMG {
 	float: left;
 	padding-right: 1em;
 }
+
 p {
 	font-size: .9em;
 	margin-bottom: 1em;
 }
+
 dt {
 	margin: 0 0 .5em;
 	font-size: .9em;
 	color: #630;
 	font-weight: bold;
 }
+
 dd {
 	margin: 0 0 1em;
 	font-size: .9em;
 	padding: 0;
 }
+
 #artwork h2 {
 	font-size: 1em;
 	color: #630;
 	margin-bottom: .5em;
 }
+
 .gallery img {
 	display: block;
 	margin-bottom: 0;
 }
+
 p.caption {
 	font-style: italic;
 	text-align: right;
 }
+
 #footer {
 	line-height: 50px;
 	text-align: center;
@@ -76,6 +106,7 @@ p.caption {
 	font-size: 0.8em;
 
 }
+
 #footer a {
 	text-decoration: none;
 	font-weight: bold;
@@ -88,10 +119,57 @@ p.caption {
 	margin-right: 5%;
 }
 
-img, object, embed, video {
+img,
+object,
+embed,
+video {
 	max-width: 100%;
 }
 
 .ie6 img {
-	width:100%;
+	width: 100%;
+}
+
+.content {
+	padding: 0 20px;
+}
+
+.content-1 img {
+	float: left;
+	/* width: 600px; */
+	padding: 10px;
+}
+
+.title {
+	padding: 10px 0;
+	color: rgb(110, 13, 189);
+}
+
+span {
+	font-weight: bold;
+}
+
+.gallery-img {
+	padding: 10px;
+}
+
+.img-desc {
+	text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+	.content-1 img {
+		width: 300px;
+	}
+}
+
+/* .gallery-imges1,
+.gallery-imges2 {
+	display: flex;
+} */
+
+@media only screen and (min-width: 992px) {
+	.content {
+		display: flex;
+	}
 }
